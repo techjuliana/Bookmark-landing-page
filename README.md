@@ -1,8 +1,8 @@
 <h1 align="center">
-E-commerce Coffee Delivery
+Bookmark landing page
 
 <h3 align="center">
-ReactJS + Styled Components e Rotas.
+ReactJS Responsivo + Styled Components e Rotas.
 
 ### Projeto Design GERAL ⬇️
 
