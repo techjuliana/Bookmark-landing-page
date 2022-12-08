@@ -14,7 +14,6 @@ export const GlobalStyles = createGlobalStyle`
  }
 
  button{
- padding:0.7rem;
   border-radius: 0.2rem; 
   cursor: pointer;
  }

@@ -1,10 +1,10 @@
 
 import { Container } from "./styled";
-
+import About from "./../../components/about"
 export default function Home() {
   return (
     <Container>
-     <h1>oi</h1>
+     <About/>
     </Container>
   );
 }

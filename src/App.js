@@ -7,6 +7,7 @@ import Contact from "./pages/contact";
 import Extension from "./pages/extension";
 import { tema } from "./theme/theme";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/extension" element={<Extension />} />
       </Routes>
+      <Footer/>
     </ThemeProvider>
   );
 }
