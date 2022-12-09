@@ -35,6 +35,7 @@ export const Conjunto2 = styled.div`
 export const Logo = styled.img`
   padding: 0.7rem;
   margin-right: 3rem;
+  
 `;
 
 export const Rota = styled.p`
@@ -43,4 +44,8 @@ export const Rota = styled.p`
   :hover {
     color: ${(props) => props.theme.Red};
   }
+`;
+
+export const Rede = styled.a`
+
 `;

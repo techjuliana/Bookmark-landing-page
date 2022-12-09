@@ -9,7 +9,7 @@ export const Container = styled.section`
   #card3 {
     margin-top: 8rem;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     text-align: center;
     margin: 2rem;
     padding: 0;
@@ -31,7 +31,6 @@ export const TituloCard = styled.h3`
 `;
 
 export const Card = styled.div`
-  padding: 1rem;
   text-align: center;
   box-shadow: 0 0 0.6rem 0 ${(props) => props.theme.Dark};
   padding: 2rem 1rem 2rem;

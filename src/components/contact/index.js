@@ -16,7 +16,7 @@ export default function Contact() {
         <br /> we’re doing
       </Titulo>
 
-      <Formulario action="/">
+      <Formulario action="/sucessoEmail">
         <Email
           type="text"
           required

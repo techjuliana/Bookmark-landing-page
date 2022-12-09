@@ -1,4 +1,4 @@
-import { Container, Logo, Rota, Conjunto, Conjunto2 } from "./styled";
+import { Container, Logo, Rota, Conjunto, Conjunto2, Rede } from "./styled";
 import logo from "./../../assets/images/logo-bookmark-dark.svg";
 import facebook from "./../../assets/images/icon-facebook.svg";
 import twitter from "./../../assets/images/icon-twitter.svg";
@@ -25,13 +25,13 @@ export default function Footer() {
       </Conjunto>
 
       <Conjunto2>
-        <Link to="/">
+        <Rede href="https://pt-br.facebook.com/" target="_blank">
           <Logo src={facebook} alt="logo" />
-        </Link>
+        </Rede>
 
-        <Link to="/">
+        <Rede href="https://twitter.com/" target="_blank">
           <Logo src={twitter} alt="logo" />
-        </Link>
+        </Rede>
       </Conjunto2>
     </Container>
   );
