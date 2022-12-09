@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 6rem;
-  min-height: 100vh;
   img {
     @media (max-width: 800px) {
       width: 22.4rem;
+      z-index: -1;
     }
   }
   @media (max-width: 800px) {
@@ -38,14 +38,17 @@ export const ColunaImagem = styled.div`
   ::after {
     content: "";
     position: absolute;
-    right: -10rem;
+    right: -6rem;
     bottom: -2rem;
     width: 90%;
     height: 80%;
     background: ${(props) => props.theme.Blue};
-    z-index: -1;
+    z-index: -2;
     border-top-left-radius: 30% 50%;
     border-bottom-left-radius: 30% 50%;
+    @media (max-width: 800px) {
+      right: -2rem;
+    }
   }
 `;
 
