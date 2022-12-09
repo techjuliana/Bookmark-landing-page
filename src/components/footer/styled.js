@@ -7,8 +7,10 @@ export const Container = styled.footer`
   justify-content: space-between;
   background: ${(props) => props.theme.Dark};
   @media (max-width: 800px) {
-    margin-left: auto;
-    margin-right: auto;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
@@ -16,6 +18,18 @@ export const Conjunto = styled.div`
   display: flex;
   flex-direction: row;
   color: ${(props) => props.theme.white};
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+export const Conjunto2 = styled.div`
+  flex-direction: row;
+  color: ${(props) => props.theme.white};
+  @media (max-width: 800px) {
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 export const Logo = styled.img`

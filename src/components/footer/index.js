@@ -1,4 +1,4 @@
-import { Container, Logo, Rota, Conjunto } from "./styled";
+import { Container, Logo, Rota, Conjunto, Conjunto2 } from "./styled";
 import logo from "./../../assets/images/logo-bookmark-dark.svg";
 import facebook from "./../../assets/images/icon-facebook.svg";
 import twitter from "./../../assets/images/icon-twitter.svg";
@@ -24,7 +24,7 @@ export default function Footer() {
         </Link>
       </Conjunto>
 
-      <Conjunto>
+      <Conjunto2>
         <Link to="/">
           <Logo src={facebook} alt="logo" />
         </Link>
@@ -32,7 +32,7 @@ export default function Footer() {
         <Link to="/">
           <Logo src={twitter} alt="logo" />
         </Link>
-      </Conjunto>
+      </Conjunto2>
     </Container>
   );
 }

@@ -9,6 +9,11 @@ export const Container = styled.section`
   #card3 {
     margin-top: 8rem;
   }
+  @media (max-width: 800px) {
+    text-align: center;
+    margin: 2rem;
+    padding: 0;
+  }
 `;
 
 export const Imagem = styled.img`
@@ -37,6 +42,10 @@ export const Cards = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 
 export const Titulo = styled.h2`
@@ -50,6 +59,9 @@ export const Paragrafo = styled.p`
   text-align: center;
   font-size: 1rem;
   line-height: 1.3;
+  @media (max-width: 800px) {
+    margin: 3rem;
+  }
 `;
 
 export const Links = styled.a`

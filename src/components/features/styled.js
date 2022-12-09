@@ -8,10 +8,18 @@ export const Container = styled.div`
   #paragrafo {
     text-align: left;
   }
+  @media (max-width: 800px) {
+    text-align: center;
+    padding: 1rem 3rem 6rem;
+  }
+
   .features-controller {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 
   .features-controller p {
@@ -43,6 +51,10 @@ export const Container = styled.div`
     justify-content: space-between;
     margin-top: 2rem;
     padding: 0;
+    @media (max-width: 800px) {
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 
   .features-tab .right-col {
@@ -69,6 +81,9 @@ export const Ilustracao = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 800px) {
+      width: 20rem;
+    }
   }
 `;
 
@@ -77,6 +92,11 @@ export const Titulo = styled.h2`
   font-size: 1.8rem;
   color: ${(props) => props.theme.Dark};
   margin-bottom: 0.7rem;
+  @media (max-width: 800px) {
+    margin-top: 7rem;
+    width: 20rem;
+    text-align: center;
+  }
 `;
 
 export const Paragrafo = styled.p`

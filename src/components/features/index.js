@@ -10,17 +10,17 @@ export default function Features() {
         <br /> so you can access them on the go.
       </Paragrafo>
 
-      <div class="features-controller">
-        <p class="control active">Simple Bookmarking</p>
-        <p class="control">Speedy Searching</p>
-        <p class="control">Easy Sharing</p>
+      <div className="features-controller">
+        <p className="control active">Simple Bookmarking</p>
+        <p className="control">Speedy Searching</p>
+        <p className="control">Easy Sharing</p>
       </div>
 
-      <div class="features-tab">
+      <div className="features-tab">
         <Ilustracao>
           <img src={ilustracao} alt="features illustration" id="image" />
         </Ilustracao>
-        <div class="right-col">
+        <div className="right-col">
           <Titulo id="lendo">Bookmark in one click</Titulo>
           <Paragrafo id="paragrafo">
             Organize your bookmarks however you like. Our simple drag-and-drop

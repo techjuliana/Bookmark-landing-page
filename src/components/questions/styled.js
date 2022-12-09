@@ -7,6 +7,11 @@ export const Container = styled.div`
     display: inline-block;
     margin-top: 2rem;
   }
+  @media (max-width: 800px) {
+    text-align: center;
+    margin: 2rem;
+    padding: 0;
+  }
 `;
 
 export const PerguntasCard = styled.ul`

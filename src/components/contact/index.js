@@ -22,7 +22,7 @@ export default function Contact() {
           required
           placeholder="Enter your email address"
           id="email"
-          class="input"
+          className="input"
         />
         <Enviar type="submit">Contact Us</Enviar>
       </Formulario>

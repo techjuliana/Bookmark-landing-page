@@ -3,16 +3,31 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 6rem;
   min-height: 100vh;
+  img {
+    @media (max-width: 800px) {
+      width: 22.4rem;
+    }
+  }
+  @media (max-width: 800px) {
+    padding: 1rem;
+  }
 `;
 
 export const Linha = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Textos = styled.div`
   max-width: 28rem;
+  @media (max-width: 800px) {
+    text-align: center;
+    margin-top: 4rem;
+  }
 `;
 
 export const ColunaImagem = styled.div`
@@ -41,6 +56,9 @@ export const Links = styled.div`
     margin-right: 1rem;
     padding: 0.7rem 1rem;
     font-size: 0.9rem;
+    @media (max-width: 800px) {
+      margin: 1.4rem;
+    }
   }
 `;
 

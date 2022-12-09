@@ -5,6 +5,9 @@ export const Container = styled.div`
   background: ${(props) => props.theme.Blue};
   text-align: center;
   color: ${(props) => props.theme.White};
+  @media (max-width: 800px) {
+    padding: 4rem;
+  }
 `;
 
 export const Titulo = styled.h4`
@@ -27,19 +30,24 @@ export const Formulario = styled.form`
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Email = styled.input`
   position: relative;
   padding: 0.7rem 5rem 0.7rem 1rem;
   font-size: 0.8rem;
-  border: none;
-  outline: none;
   border-radius: 0.2rem;
   color: ${(props) => props.theme.Dark};
   border: 2px solid ${(props) => props.theme.Blue};
   ::placeholder {
     color: ${(props) => props.theme.Grayish};
+  }
+  @media (max-width: 800px) {
+    align-items: center;
   }
 `;
 
@@ -48,14 +56,17 @@ export const Enviar = styled.button`
   color: ${(props) => props.theme.White};
   border: 2px solid ${(props) => props.theme.Red};
   background: ${(props) => props.theme.Red};
-  outline: none;
   font-size: 0.8rem;
   border-radius: 0.2rem;
   margin-left: 1rem;
-  cursor: pointer;
   transition: 0.5s;
   :hover {
     background: ${(props) => props.theme.White};
     color: ${(props) => props.theme.Red};
+  }
+  @media (max-width: 800px) {
+    margin-top: 0.6rem;
+    margin-left: 0rem;
+    width: 14.5rem;
   }
 `;
