@@ -22,7 +22,7 @@ export const Logo = styled.img`
   margin-right: 3rem;
 `;
 
-export const Rota = styled.p`
+export const Rota = styled.text`
   margin: 1rem;
   :hover {
     color: ${(props) => props.theme.Red};
@@ -30,6 +30,9 @@ export const Rota = styled.p`
 `;
 
 export const Carrinho = styled.button`
+padding-left:1rem;
+padding-right:1rem;
+margin-left:1rem;
   color: ${(props) => props.theme.White};
   background: ${(props) => props.theme.Red};
   :hover {

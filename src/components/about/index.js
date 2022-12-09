@@ -1,32 +1,36 @@
 import {
-  ContainerTexto,
-  Lista,
-  Informacao,
-  Subtitulo,
-  Titulo,
-  Conjunto,
-  Imagem,
+  Links,
   Container,
-  // Titulo2,
+  Chrome,
+  Firefox,
+  ColunaImagem,
+  Paragrafo,
+  Titulo,
+  Linha,
+  Textos,
 } from "./styled";
 import imagem from "./../../assets/images/illustration-hero.svg";
 export default function About() {
   return (
     <Container>
-      <ContainerTexto>
-        <Conjunto>
-          <Titulo>A simple BookMark Manager</Titulo>
-          <Subtitulo>
-            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
-            hora
-          </Subtitulo>
-          <Lista>
-            <Informacao>Get it on Chrome</Informacao>
-            <Informacao>Get it on Firefox</Informacao>
-          </Lista>
-        </Conjunto>
-        <Imagem src={imagem} alt="" />
-      </ContainerTexto>
+      <Linha>
+        <Textos>
+          <Titulo>A Simple Bookmark Manager</Titulo>
+          <Paragrafo>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </Paragrafo>
+          <Links>
+            <Chrome href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Get it on Chrome</Chrome>
+            <Firefox href="https://www.mozilla.org/pt-BR/firefox/new/" target="_blank">Get it on Firefox</Firefox>
+          </Links>
+        </Textos>
+
+        <ColunaImagem>
+          <img src={imagem} alt="bookmark" />
+        </ColunaImagem>
+      </Linha>
     </Container>
   );
 }

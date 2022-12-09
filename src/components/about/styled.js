@@ -1,110 +1,72 @@
 import styled from "styled-components";
 
-export const ContainerTexto = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  @media (max-width: 800px) {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .circulo4 {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    padding: 4px;
-    margin-right: 0.6rem;
-    background: ${(props) => props.theme.lilas2};
-    color: ${(props) => props.theme.body};
-  }
-
-  .circulo1 {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-    margin-right: 0.6rem;
-    background: ${(props) => props.theme.laranja1};
-    color: ${(props) => props.theme.body};
-  }
-
-  .circulo2 {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    padding: 4px;
-    margin-right: 0.6rem;
-    background: ${(props) => props.theme.laranja2};
-    color: ${(props) => props.theme.body};
-  }
-
-  .circulo3 {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    padding: 4px;
-    margin-right: 0.6rem;
-    background: ${(props) => props.theme.subtitulo};
-    color: ${(props) => props.theme.body};
-  }
-`;
-
 export const Container = styled.div`
-  margin: 1rem;
+  padding: 6rem;
+  min-height: 100vh;
 `;
 
-
-export const Imagem = styled.img`
-  width: 34rem;
-  @media (max-width: 800px) {
-    width: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-`;
-
-export const Lista = styled.div`
-  display: grid;
-  grid-template-columns: 290px 290px;
-  @media (max-width: 800px) {
-    grid-template-columns: 100%;
-  }
-`;
-
-export const Conjunto = styled.div`
+export const Linha = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;
 
+export const Textos = styled.div`
+  max-width: 28rem;
+`;
+
+export const ColunaImagem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  ::after {
+    content: "";
+    position: absolute;
+    right: -10rem;
+    bottom: -2rem;
+    width: 90%;
+    height: 80%;
+    background: ${(props) => props.theme.Blue};
+    z-index: -1;
+    border-top-left-radius: 30% 50%;
+    border-bottom-left-radius: 30% 50%;
+  }
+`;
+
+export const Links = styled.div`
+  display: flex;
+  align-items: center;
+  a {
+    margin-right: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+`;
+
+export const Firefox = styled.a`
+  background: ${(props) => props.theme.White};
+  color: ${(props) => props.theme.Dark};
+  box-shadow: 0 0 0.5rem ${(props) => props.theme.Grayish};
+  :hover {
+    border: 2px solid ${(props) => props.theme.Dark};
+  }
+`;
+
+export const Chrome = styled.a`
+  color: ${(props) => props.theme.White};
+  background: ${(props) => props.theme.Blue};
+  border: 2px solid ${(props) => props.theme.Blue};
+  :hover {
+    color: ${(props) => props.theme.Blue};
+  }
+`;
+
+export const Paragrafo = styled.p`
+  line-height: 1.5;
+  margin-bottom: 2rem;
+`;
 export const Titulo = styled.h1`
-  width: 25rem;
-  @media (max-width: 800px) {
-    width: 100%;
-  }
-`;
-
-export const Informacao = styled.button`
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-`;
-
-export const Subtitulo = styled.text`
-  width: 33rem;
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
-  margin-top: 1rem;
-  color: ${(props) => props.theme.subtitulo};
-  @media (max-width: 800px) {
-    width: 100%;
-  }
-`;
-
-export const Titulo2 = styled.h1`
-  margin-top: 6rem;
-  display: flex;
-  justify-content: center;
-  width: 15rem;
-  @media (max-width: 800px) {
-    text-align: center;
-  }
 `;

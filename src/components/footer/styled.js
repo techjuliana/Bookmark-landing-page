@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.footer`
+  padding: 1rem;
   display: flex;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 2rem;
+  align-items: center;
   justify-content: space-between;
+  background: ${(props) => props.theme.Dark};
   @media (max-width: 800px) {
     margin-left: auto;
     margin-right: auto;
@@ -18,25 +15,18 @@ export const Container = styled.div`
 export const Conjunto = styled.div`
   display: flex;
   flex-direction: row;
+  color: ${(props) => props.theme.white};
 `;
 
 export const Logo = styled.img`
+  padding: 0.7rem;
   margin-right: 3rem;
 `;
 
 export const Rota = styled.p`
   margin: 1rem;
-  :hover {
-    color: ${(props) => props.theme.Red};
-  }
-`;
-
-export const Carrinho = styled.button`
   color: ${(props) => props.theme.White};
-  background: ${(props) => props.theme.Red};
   :hover {
-    background: ${(props) => props.theme.White};
-    border: 2px solid ${(props) => props.theme.Red};
     color: ${(props) => props.theme.Red};
   }
 `;
