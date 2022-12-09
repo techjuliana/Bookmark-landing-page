@@ -70,7 +70,7 @@ export const Navegacao = styled.div`
   margin: 5px;
 `;
 
-export const EstiloCaixa = styled.div`
+export const EstiloCaixa = styled.form`
   background: ${(props) => props.theme.Blue};
   padding: 2rem;
   border-radius: 20px;
