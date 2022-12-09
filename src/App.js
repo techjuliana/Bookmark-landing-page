@@ -9,6 +9,7 @@ import { tema } from "./theme/theme";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import SucessoEmail from "./components/sucessoEmail";
+import Login from "./components/login";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/extension" element={<Extension />} />
         <Route path="/sucessoEmail" element={<SucessoEmail />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer/>
     </ThemeProvider>

@@ -6,6 +6,5 @@ export const tema = {
   Dark: "hsl(229, 31%, 21%)",
 Green: "#3DD73C",
 GreenDark: "#006501",
-
  
 }

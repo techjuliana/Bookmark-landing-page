@@ -48,7 +48,7 @@ export default function Header() {
         </Link>
 
         <Carrinho>
-          <Link to="/">
+          <Link to="/login">
             <Rota>LOGIN</Rota>
           </Link>
         </Carrinho>
