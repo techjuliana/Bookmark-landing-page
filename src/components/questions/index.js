@@ -12,11 +12,10 @@ export default function Questions() {
 
       <PerguntasCard>
         <Lista>
+        <Resposta>
           <Pergunta>
             What is Bookmark? <img src={arrow} alt="arrow" />
           </Pergunta>
-
-          <Resposta>
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
             aliquet convallis ultricies. Mauris augue massa, ultricies non
@@ -27,11 +26,12 @@ export default function Questions() {
         </Lista>
 
         <Lista>
+        <Resposta>
           <Pergunta>
             How can I request a new browser? <img src={arrow} alt="arrow" />
           </Pergunta>
 
-          <Resposta>
+        
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
             aliquet convallis ultricies. Mauris augue massa, ultricies non
@@ -42,11 +42,12 @@ export default function Questions() {
         </Lista>
 
         <Lista>
+        <Resposta>
           <Pergunta>
             Is there a mobile app? <img src={arrow} alt="arrow" />
           </Pergunta>
 
-          <Resposta>
+         
             Sed consectetur quam id neque fermentum accumsan. Praesent luctus
             vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
             quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
@@ -55,11 +56,10 @@ export default function Questions() {
         </Lista>
 
         <Lista>
+        <Resposta>
           <Pergunta>
             What about other Chromium browsers? <img src={arrow} alt="arrow" />
           </Pergunta>
-
-          <Resposta>
             Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
             mi, at euismod dui. Aliquam vitae neque eget nisl gravida
             pellentesque non ut velit.

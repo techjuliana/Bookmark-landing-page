@@ -39,9 +39,10 @@ export const Pergunta = styled.summary`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  font-weight: 500;
 `;
 
-export const Resposta = styled.details `
+export const Resposta = styled.details`
   padding: 1.5rem 0 0.5rem;
   text-align: left;
   line-height: 1.6;
