@@ -34,20 +34,17 @@ export const Lista = styled.li`
   }
 `;
 
-export const Pergunta = styled.div`
+export const Pergunta = styled.summary`
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 `;
 
-export const Resposta = styled.p`
+export const Resposta = styled.details `
   padding: 1.5rem 0 0.5rem;
   text-align: left;
   line-height: 1.6;
   color: ${(props) => props.theme.Dark};
   font-weight: 400;
-`;
-export const EsconderTexto = styled.div`
-  display: none;
 `;

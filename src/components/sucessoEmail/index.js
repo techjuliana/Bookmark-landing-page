@@ -7,15 +7,14 @@ export default function SucessoEmail() {
     <Container>
       <h1>Email successfully registered</h1>
       <Paragrafo>
-        Enjoy more content on our landing page, Enjoy more content on our
-        landing page,
+        Enjoy more content on our landing page, Enjoy more content on our landing page,
         <br />
         Enjoy more content on our landing page.
       </Paragrafo>
       <PerguntasCard>
         <img src={arrow} alt="bookmark" />
         <Link to="/">
-          <Sucesso>Voltar para a Home</Sucesso>
+          <Sucesso>Back to Home</Sucesso>
         </Link>
       </PerguntasCard>
     </Container>
