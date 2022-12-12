@@ -17,7 +17,7 @@ export const Conjunto2 = styled.div`
   @media (max-width: 800px) {
     flex-direction: row;
     align-items: center;
-    padding-left: 4rem;
+    padding-left: 1rem;
   }
 `;
 
@@ -50,7 +50,7 @@ export const Rota = styled.text`
     margin: 2rem;
     display: flex;
     border-top: 1px solid ${(props) => props.theme.Grayish};
-    padding: 20px 7rem;
+    padding: 20px 3rem;
     font-size: 1.3rem;
     letter-spacing: 2px;
   }
@@ -70,9 +70,10 @@ export const BotaoLogin = styled.button`
     color: ${(props) => props.theme.Red};
   }
   @media (max-width: 800px) {
+    border: 1px solid ${(props) => props.theme.Grayish};
+    padding: 1px 10px;
     background: transparent;
     :hover {
-      border: none;
       background: none;
     }
   }
@@ -89,7 +90,7 @@ export const MobileNav = styled.div`
     font-size: 1.4rem;
     color: ${({ navToggle }) => (navToggle ? "hsl(229, 31%, 21%)" : "black")};
   }
-  @media screen and (max-width: 800px) {
+  @media (max-width: 800px) {
     flex: 1;
     display: flex;
     justify-content: flex-end;
