@@ -12,6 +12,7 @@ import {
 } from "./styled";
 import ilustracao from "./../../assets/images/illustration-features-tab-1.svg";
 import ilustracao2 from "./../../assets/images/illustration-features-tab-2.svg";
+import ilustracao3 from "./../../assets/images/illustration-features-tab-3.svg";
 import { useState } from "react";
 export default function Features() {
   const [opcao, setOpcao] = useState("");
@@ -32,7 +33,7 @@ export default function Features() {
       </Menu>
 
       <div>
-        {opcao === "1" ? (
+        {opcao === "1" ? 
           <Card>
             <Ilustracao>
               <img src={ilustracao} alt="features" />
@@ -47,7 +48,7 @@ export default function Features() {
               <Informacao href="/">More Info</Informacao>
             </Texto>
           </Card>
-        ) : (
+         : opcao === "2" ? 
           <Card>
             <Ilustracao>
               <img src={ilustracao2} alt="features" />
@@ -61,19 +62,21 @@ export default function Features() {
               <Informacao href="/">More Info</Informacao>
             </Texto>
           </Card>
-        )}
-        {/* <Card>
+         : 
+          <Card>
             <Ilustracao>
               <img src={ilustracao3} alt="features" />
             </Ilustracao>
             <Texto>
               <Titulo>Share your bookmarks</Titulo>
               <Paragrafo>
-              Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
               </Paragrafo>
               <Informacao href="/">More Info</Informacao>
             </Texto>
-          </Card> */}
+          </Card>
+        }
       </div>
     </Container>
   );
