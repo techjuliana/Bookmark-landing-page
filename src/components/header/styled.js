@@ -9,6 +9,20 @@ export const Container = styled.nav`
   justify-content: space-between;
 `;
 
+export const Itens = styled.div`
+  margin: 3rem;
+`;
+
+export const Conjunto2 = styled.div`
+  @media (max-width: 800px) {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10rem;
+  }
+`;
+
+export const Rede = styled.a``;
+
 export const Conjunto = styled.div`
   display: flex;
   flex-direction: row;
@@ -16,6 +30,7 @@ export const Conjunto = styled.div`
     flex-direction: column;
     background-color: hsla(229, 31%, 21%, 0.951);
     position: absolute;
+    z-index: 20;
     top: 0;
     right: 0;
     left: 0;
@@ -31,26 +46,35 @@ export const Logo = styled.img`
 export const Rota = styled.text`
   margin: 1.4rem;
   @media (max-width: 800px) {
-    text-align:center;
     color: ${(props) => props.theme.White};
     margin: 4rem;
     display: flex;
+    border-top: 1px solid ${(props) => props.theme.Grayish};
+    padding: 20px 0;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
   }
   :hover {
     color: ${(props) => props.theme.Red};
   }
 `;
 
-export const Carrinho = styled.button`
+export const BotaoLogin = styled.button`
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-left: 1rem;
   color: ${(props) => props.theme.White};
   background: ${(props) => props.theme.Red};
   :hover {
     background: ${(props) => props.theme.White};
     border: 2px solid ${(props) => props.theme.Red};
     color: ${(props) => props.theme.Red};
+  }
+  @media screen and (max-width: 800px) {
+    background: transparent;
+    :hover {
+      border: none;
+      background: none;
+    }
   }
 `;
 
