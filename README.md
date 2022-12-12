@@ -8,15 +8,47 @@ ReactJS Responsivo + Styled Components e Rotas.
 
 ![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/desktop-preview.jpg)
 
-### Projeto Design ATIVIDADES ⬇️
+### Projeto Design HOME ⬇️
 
-![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/desktop-active-states.jpg)
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/home.png)
 
-### Projeto Design MOBILE ⬇️
+### Projeto Design CARDS ⬇️
 
-![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/mobile-design.jpg)
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/cards.png)
+
+### Projeto Design FEATURES ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/features.png)
 
 
+### Projeto Design PERGUNTAS ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/perguntas.png)
+
+### Projeto Design CONTATO E-MAIL ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/contato.png)
+
+
+### Projeto Design ENVIO DO E-MAIL COM SUCESSO ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/emailSucesso.png)
+
+### Projeto Design CRIAR CONTA ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/criarConta.png)
+
+### Projeto Design LOGIN CONTA ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/login.png)
+
+### Projeto Design HOME MOBILE ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/homeMobile.png)
+
+### Projeto Design MENU MOBILE ⬇️
+
+![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/menuMobile.png)
 
 ### `npm start`
 
