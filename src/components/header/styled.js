@@ -70,8 +70,6 @@ export const BotaoLogin = styled.button`
     color: ${(props) => props.theme.Red};
   }
   @media (max-width: 800px) {
-    border: 1px solid ${(props) => props.theme.Grayish};
-    padding: 1px 10px;
     background: transparent;
     :hover {
       background: none;
