@@ -7,7 +7,8 @@ export default function SucessoEmail() {
     <Container>
       <h1>Email successfully registered</h1>
       <Paragrafo>
-        Enjoy more content on our landing page, Enjoy more content on our landing page,
+        Enjoy more content on our landing page, Enjoy more content on our
+        landing page,
         <br />
         Enjoy more content on our landing page.
       </Paragrafo>

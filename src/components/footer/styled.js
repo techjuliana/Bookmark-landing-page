@@ -7,10 +7,8 @@ export const Container = styled.footer`
   justify-content: space-between;
   background: ${(props) => props.theme.Dark};
   @media (max-width: 800px) {
-    @media (max-width: 800px) {
-      flex-direction: column;
-      align-items: center;
-    }
+    flex-direction: column;
+    align-items: center;
   }
 `;
 

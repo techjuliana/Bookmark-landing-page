@@ -1,4 +1,14 @@
-import { Container, Links, Paragrafo, Titulo, Cards, Card, Linha, TituloCard, Imagem} from "./styled";
+import {
+  Container,
+  Links,
+  Paragrafo,
+  Titulo,
+  Cards,
+  Card,
+  Linha,
+  TituloCard,
+  Imagem,
+} from "./styled";
 import chrome from "./../../assets/images/logo-chrome.svg";
 import firefox from "./../../assets/images/logo-firefox.svg";
 import opera from "./../../assets/images/logo-opera.svg";
@@ -16,7 +26,7 @@ export default function extension() {
           <Imagem src={chrome} alt="chrome logo" />
           <TituloCard>Add to Chrome</TituloCard>
           <Paragrafo>Minimum version 62</Paragrafo>
-          <Linha/>
+          <Linha />
           <Links href="/">Add & Install Extension</Links>
         </Card>
         <Card id="card2">
@@ -30,7 +40,7 @@ export default function extension() {
           <Imagem src={opera} alt="opera logo" />
           <TituloCard>Add to Opera</TituloCard>
           <Paragrafo>Minimum version 46</Paragrafo>
-          <Linha/>
+          <Linha />
           <Links href="/">Add & Install Extension</Links>
         </Card>
       </Cards>

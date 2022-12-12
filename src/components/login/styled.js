@@ -9,7 +9,7 @@ export const Container = styled.div`
     width: 15rem;
     @media (max-width: 800px) {
       width: 10rem;
-  }
+    }
   }
   input {
     width: 97%;

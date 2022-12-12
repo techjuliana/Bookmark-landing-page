@@ -22,8 +22,18 @@ export default function About() {
             free.
           </Paragrafo>
           <Links>
-            <Chrome href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Get it on Chrome</Chrome>
-            <Firefox href="https://www.mozilla.org/pt-BR/firefox/new/" target="_blank">Get it on Firefox</Firefox>
+            <Chrome
+              href="https://www.google.com/intl/pt-BR/chrome/"
+              target="_blank"
+            >
+              Get it on Chrome
+            </Chrome>
+            <Firefox
+              href="https://www.mozilla.org/pt-BR/firefox/new/"
+              target="_blank"
+            >
+              Get it on Firefox
+            </Firefox>
           </Links>
         </Textos>
 

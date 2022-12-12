@@ -81,7 +81,6 @@ export const TituloPrincipal = styled.h2`
   margin-bottom: 0.7rem;
   @media (max-width: 800px) {
     margin-top: 7rem;
-    width: 20rem;
     text-align: center;
   }
 `;

@@ -10,7 +10,7 @@ import {
   Menu,
   Texto,
 } from "./styled";
-import ilustracao from "./../../assets/images/illustration-features-tab-1.svg";
+import ilustracao1 from "./../../assets/images/illustration-features-tab-1.svg";
 import ilustracao2 from "./../../assets/images/illustration-features-tab-2.svg";
 import ilustracao3 from "./../../assets/images/illustration-features-tab-3.svg";
 import { useState } from "react";
@@ -33,10 +33,10 @@ export default function Features() {
       </Menu>
 
       <div>
-        {opcao === "1" ? 
+        {opcao === "1" ? (
           <Card>
             <Ilustracao>
-              <img src={ilustracao} alt="features" />
+              <img src={ilustracao1} alt="features" />
             </Ilustracao>
             <Texto>
               <Titulo>Bookmark in one click</Titulo>
@@ -48,7 +48,7 @@ export default function Features() {
               <Informacao href="/">More Info</Informacao>
             </Texto>
           </Card>
-         : opcao === "2" ? 
+        ) : opcao === "2" ? (
           <Card>
             <Ilustracao>
               <img src={ilustracao2} alt="features" />
@@ -62,7 +62,7 @@ export default function Features() {
               <Informacao href="/">More Info</Informacao>
             </Texto>
           </Card>
-         : 
+        ) : (
           <Card>
             <Ilustracao>
               <img src={ilustracao3} alt="features" />
@@ -76,7 +76,7 @@ export default function Features() {
               <Informacao href="/">More Info</Informacao>
             </Texto>
           </Card>
-        }
+        )}
       </div>
     </Container>
   );
