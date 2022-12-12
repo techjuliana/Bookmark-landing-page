@@ -12,59 +12,45 @@ export const Container = styled.div`
     text-align: center;
     padding: 1rem 3rem 6rem;
   }
+`;
+export const Texto = styled.div`
+  margin: 2rem;
+`;
 
-  .features-controller {
-    display: flex;
-    align-items: center;
+export const Card = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding: 0;
+  @media (max-width: 800px) {
     justify-content: center;
-    @media (max-width: 800px) {
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
+`;
 
-  .features-controller p {
+export const Menu = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
     padding: 1rem 2rem;
     border-bottom: 1px solid ${(props) => props.theme.Grayish};
     position: relative;
     cursor: pointer;
     color: ${(props) => props.theme.Dark};
     transition: 0.5s;
-  }
-
-  .features-controller p:hover {
-    color: ${(props) => props.theme.Red};
-  }
-
-  .features-controller .active:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.15rem;
-    background: ${(props) => props.theme.Red};
-  }
-
-  .features-tab {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2rem;
-    padding: 0;
-    @media (max-width: 800px) {
-      justify-content: center;
-      flex-direction: column;
+    :hover {
+      color: ${(props) => props.theme.Red};
     }
   }
-
-  .features-tab .right-col {
-    flex-basis: 40%;
+  @media (max-width: 800px) {
+    flex-direction: column;
   }
 `;
 
 export const Ilustracao = styled.div`
   position: relative;
-  flex-basis: 50%;
   ::after {
     content: "";
     position: absolute;
@@ -81,13 +67,14 @@ export const Ilustracao = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 25rem;
     @media (max-width: 800px) {
       width: 20rem;
     }
   }
 `;
 
-export const Titulo = styled.h2`
+export const TituloPrincipal = styled.h2`
   text-align: center;
   font-size: 1.8rem;
   color: ${(props) => props.theme.Dark};
@@ -99,10 +86,31 @@ export const Titulo = styled.h2`
   }
 `;
 
-export const Paragrafo = styled.p`
+export const Titulo = styled.h2`
+  text-align: left;
+  font-size: 1.8rem;
+  color: ${(props) => props.theme.Dark};
+  margin-bottom: 0.7rem;
+  @media (max-width: 800px) {
+    margin-top: 7rem;
+    width: 20rem;
+    text-align: center;
+  }
+`;
+export const ParagrafoPrincipal = styled.p`
   margin-top: 1.5rem;
   padding-bottom: 1.6rem;
   text-align: center;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: ${(props) => props.theme.Grayish};
+  margin-bottom: 1rem;
+`;
+
+export const Paragrafo = styled.p`
+  margin-top: 1.5rem;
+  padding-bottom: 1.6rem;
+  text-align: left;
   font-size: 1rem;
   line-height: 1.3;
   color: ${(props) => props.theme.Grayish};
