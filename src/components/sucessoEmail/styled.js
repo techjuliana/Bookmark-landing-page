@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 10rem 2rem 16rem;
   text-align: center;
-  min-height: 78vh;
 `;
 
 export const PerguntasCard = styled.div`
