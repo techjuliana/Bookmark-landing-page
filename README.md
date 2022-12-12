@@ -42,9 +42,6 @@ ReactJS Responsivo + Styled Components e Rotas.
 
 ![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/login.png)
 
-### Projeto Design HOME MOBILE ⬇️
-
-![image](https://raw.githubusercontent.com/techjuliana/Bookmark-landing-page/main/design/homeMobile.png)
 
 ### Projeto Design MENU MOBILE ⬇️
 
