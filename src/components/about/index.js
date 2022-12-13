@@ -10,33 +10,29 @@ import {
   Textos,
 } from "./styled";
 import imagem from "./../../assets/images/illustration-hero.svg";
+import { StringsComuns } from "../../localization/texts";
 export default function About() {
   return (
     <Container>
       <Linha>
         <Textos>
-          <Titulo>A Simple Bookmark Manager</Titulo>
-          <Paragrafo>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
-          </Paragrafo>
+          <Titulo>{StringsComuns.components.about.titulo}</Titulo>
+          <Paragrafo>{StringsComuns.components.about.paragrafo}</Paragrafo>
           <Links>
             <Chrome
               href="https://www.google.com/intl/pt-BR/chrome/"
               target="_blank"
             >
-              Get it on Chrome
+              {StringsComuns.components.about.buttons.chrome}
             </Chrome>
             <Firefox
               href="https://www.mozilla.org/pt-BR/firefox/new/"
               target="_blank"
             >
-              Get it on Firefox
+              {StringsComuns.components.about.buttons.firefox}
             </Firefox>
           </Links>
         </Textos>
-
         <ColunaImagem>
           <img src={imagem} alt="bookmark" />
         </ColunaImagem>

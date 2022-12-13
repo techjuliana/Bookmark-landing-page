@@ -1,3 +1,4 @@
+import { StringsComuns } from "../../localization/texts";
 import {
   Container,
   Enviar,
@@ -10,21 +11,20 @@ import {
 export default function Contact() {
   return (
     <Container>
-      <TituloPrincipal>35,000+ already joined</TituloPrincipal>
-      <Titulo>
-        Stay up-to-date with what
-        <br /> we’re doing
-      </Titulo>
+      <TituloPrincipal>
+        {StringsComuns.components.contact.tituloPrincipal}
+      </TituloPrincipal>
+      <Titulo>{StringsComuns.components.contact.titulo}</Titulo>
 
       <Formulario action="/sucessoEmail">
         <Email
           type="text"
           required
-          placeholder="Enter your email address"
+          placeholder={StringsComuns.components.contact.textoBotao}
           id="email"
           className="input"
         />
-        <Enviar type="submit">Contact Us</Enviar>
+        <Enviar type="submit">{StringsComuns.components.contact.botao}</Enviar>
       </Formulario>
     </Container>
   );

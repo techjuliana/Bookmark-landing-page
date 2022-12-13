@@ -16,6 +16,7 @@ import twitter from "./../../assets/images/icon-twitter.svg";
 import logo from "./../../assets/images/logo-bookmark.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { StringsComuns } from "../../localization/texts";
 export default function Header() {
   const [navToggle, setNavToggle] = useState(false);
   const alternar = () => {
@@ -50,20 +51,20 @@ export default function Header() {
       <Conjunto navToggle={navToggle}>
         <Itens>
           <Link to="/features">
-            <Rota>FEATURES</Rota>
+            <Rota>{StringsComuns.components.rotas.features}</Rota>
           </Link>
 
           <Link to="/extension">
-            <Rota>PRICING</Rota>
+            <Rota>{StringsComuns.components.rotas.pricing}</Rota>
           </Link>
 
           <Link to="/contact">
-            <Rota>CONTACT</Rota>
+            <Rota>{StringsComuns.components.rotas.contact}</Rota>
           </Link>
 
           <BotaoLogin>
             <Link to="/login">
-              <Rota>LOGIN</Rota>
+              <Rota>{StringsComuns.components.rotas.login}</Rota>
             </Link>
           </BotaoLogin>
 

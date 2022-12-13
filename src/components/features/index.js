@@ -14,22 +14,29 @@ import ilustracao1 from "./../../assets/images/illustration-features-tab-1.svg";
 import ilustracao2 from "./../../assets/images/illustration-features-tab-2.svg";
 import ilustracao3 from "./../../assets/images/illustration-features-tab-3.svg";
 import { useState } from "react";
+import { StringsComuns } from "../../localization/texts";
 export default function Features() {
   const [opcao, setOpcao] = useState("");
 
   return (
     <Container>
-      <TituloPrincipal>Features</TituloPrincipal>
+      <TituloPrincipal>
+        {StringsComuns.components.features.titulo}
+      </TituloPrincipal>
       <ParagrafoPrincipal>
-        Our aim is to make it quick and easy for you to access your
-        <br /> favourite websites. Your bookmarks sync between your devices
-        <br /> so you can access them on the go.
+        {StringsComuns.components.features.paragrafo}
       </ParagrafoPrincipal>
 
       <Menu>
-        <p onClick={() => setOpcao("1")}>Simple Bookmarking</p>
-        <p onClick={() => setOpcao("2")}>Speedy Searching</p>
-        <p onClick={() => setOpcao("3")}>Easy Sharing</p>
+        <p onClick={() => setOpcao("1")}>
+          {StringsComuns.components.features.menu.opcao1}
+        </p>
+        <p onClick={() => setOpcao("2")}>
+          {StringsComuns.components.features.menu.opcao2}
+        </p>
+        <p onClick={() => setOpcao("3")}>
+          {StringsComuns.components.features.menu.opcao3}
+        </p>
       </Menu>
 
       <div>
@@ -39,13 +46,13 @@ export default function Features() {
               <img src={ilustracao1} alt="features" />
             </Ilustracao>
             <Texto>
-              <Titulo>Bookmark in one click</Titulo>
+              <Titulo>{StringsComuns.components.features.card1.titulo}</Titulo>
               <Paragrafo>
-                Organize your bookmarks however you like. Our simple
-                drag-and-drop interface gives you complete control over how you
-                manage your favourite sites.
+                {StringsComuns.components.features.card1.paragrafo}
               </Paragrafo>
-              <Informacao href="/">More Info</Informacao>
+              <Informacao href="/">
+                {StringsComuns.components.features.button}
+              </Informacao>
             </Texto>
           </Card>
         ) : opcao === "2" ? (
@@ -54,12 +61,13 @@ export default function Features() {
               <img src={ilustracao2} alt="features" />
             </Ilustracao>
             <Texto>
-              <Titulo>Intelligent search</Titulo>
+              <Titulo>{StringsComuns.components.features.card2.titulo}</Titulo>
               <Paragrafo>
-                Our powerful search feature will help you find saved sites in no
-                time at all. No need to trawl through all of your bookmarks.
+                {StringsComuns.components.features.card2.paragrafo}
               </Paragrafo>
-              <Informacao href="/">More Info</Informacao>
+              <Informacao href="/">
+                {StringsComuns.components.features.button}
+              </Informacao>
             </Texto>
           </Card>
         ) : (
@@ -68,12 +76,13 @@ export default function Features() {
               <img src={ilustracao3} alt="features" />
             </Ilustracao>
             <Texto>
-              <Titulo>Share your bookmarks</Titulo>
+              <Titulo>{StringsComuns.components.features.card3.titulo}</Titulo>
               <Paragrafo>
-                Easily share your bookmarks and collections with others. Create
-                a shareable link that you can send at the click of a button.
+                {StringsComuns.components.features.card3.paragrafo}
               </Paragrafo>
-              <Informacao href="/">More Info</Informacao>
+              <Informacao href="/">
+                {StringsComuns.components.features.button}
+              </Informacao>
             </Texto>
           </Card>
         )}

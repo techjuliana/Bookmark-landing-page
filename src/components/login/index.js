@@ -10,6 +10,7 @@ import {
   Botao,
   Titulo,
 } from "./styled";
+import { StringsComuns } from "../../localization/texts";
 function Login() {
   const [opcao, setOpcao] = useState("");
 
@@ -18,54 +19,66 @@ function Login() {
       <Campo>
         <img src={capa} alt="logo" />
         <Navegacao>
-          <Botao onClick={() => setOpcao("criar")}>Criar Conta</Botao>
-          <Botao onClick={() => setOpcao("login")}>Login</Botao>
+          <Botao onClick={() => setOpcao("criar")}>
+            {StringsComuns.components.login.navegacao.criar}
+          </Botao>
+          <Botao onClick={() => setOpcao("login")}>
+            {StringsComuns.components.login.navegacao.login}
+          </Botao>
         </Navegacao>
         <EstiloCaixa action="/sucessoEmail">
           {opcao === "criar" ? (
             <div className="criar-campo">
-              <Titulo>Crie sua conta e aproveite</Titulo>
-              <input placeholder="Como quer ser chamado(a)?"></input>
+              <Titulo>{StringsComuns.components.login.tituloCriar}</Titulo>
+              <input
+                placeholder={StringsComuns.components.login.inputs.nome}
+              ></input>
               <IMaskInput
                 mask="000.000.000-00"
-                placeholder="Digite o seu CPF"
+                placeholder={StringsComuns.components.login.inputs.cpf}
                 type="text"
                 required
               />
               <IMaskInput
                 mask="(00) 00000 - 0000"
-                placeholder="Digite o Telefone"
+                placeholder={StringsComuns.components.login.inputs.telefone}
                 type="text"
                 required
               />
               <input
                 type="text"
                 required
-                placeholder="Digite seu melhor e-mail"
+                placeholder={StringsComuns.components.login.inputs.email}
               ></input>
               <input
                 type="text"
                 required
-                placeholder="Digite sua melhor Senha"
+                placeholder={StringsComuns.components.login.inputs.senha}
               ></input>
               <input
                 type="text"
                 required
-                placeholder="Confirmar a Senha"
+                placeholder={
+                  StringsComuns.components.login.inputs.confirmarSenha
+                }
               ></input>
             </div>
           ) : (
             <div>
-              <Titulo>Entre em sua conta</Titulo>
+              <Titulo>{StringsComuns.components.login.tituloLogin}</Titulo>
               <input
                 type="text"
                 required
-                placeholder="Digite seu e-mail"
+                placeholder={StringsComuns.components.login.inputs.email}
               ></input>
-              <input type="text" required placeholder="Senha"></input>
+              <input
+                type="text"
+                required
+                placeholder={StringsComuns.components.login.inputs.senha}
+              ></input>
             </div>
           )}
-          <Entrar type="submit">Entrar</Entrar>
+          <Entrar type="submit">{StringsComuns.components.login.entrar}</Entrar>
         </EstiloCaixa>
       </Campo>
     </Container>

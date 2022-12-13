@@ -5,65 +5,56 @@ import {
   ParagrafoPrincipal,
   TituloPrincipal,
 } from "../features/styled";
+import { StringsComuns } from "../../localization/texts";
 export default function Questions() {
   return (
     <Container>
-      <TituloPrincipal>Frequently Asked Questions</TituloPrincipal>
+      <TituloPrincipal>
+        {StringsComuns.components.questions.titulo}
+      </TituloPrincipal>
       <ParagrafoPrincipal>
-        Here are some of our FAQs. If you have any other questions
-        <br /> you’d like answered please feel free to email us.
+        {StringsComuns.components.questions.paragrafo}
       </ParagrafoPrincipal>
 
       <PerguntasCard>
         <Lista>
           <Resposta>
             <Pergunta>
-              What is Bookmark? <img src={arrow} alt="arrow" />
-            </Pergunta>
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
-            aliquet convallis ultricies. Mauris augue massa, ultricies non
-            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-            imperdiet.
-          </Resposta>
-        </Lista>
-
-        <Lista>
-          <Resposta>
-            <Pergunta>
-              How can I request a new browser? <img src={arrow} alt="arrow" />
-            </Pergunta>
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
-            aliquet convallis ultricies. Mauris augue massa, ultricies non
-            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-            imperdiet.
-          </Resposta>
-        </Lista>
-
-        <Lista>
-          <Resposta>
-            <Pergunta>
-              Is there a mobile app? <img src={arrow} alt="arrow" />
-            </Pergunta>
-            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
-            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
-            ex et ultricies bibendum.
-          </Resposta>
-        </Lista>
-
-        <Lista>
-          <Resposta>
-            <Pergunta>
-              What about other Chromium browsers?{" "}
+              {StringsComuns.components.questions.pergunta1.titulo}
               <img src={arrow} alt="arrow" />
             </Pergunta>
-            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
-            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
-            pellentesque non ut velit.
+            {StringsComuns.components.questions.pergunta1.resposta}
+          </Resposta>
+        </Lista>
+
+        <Lista>
+          <Resposta>
+            <Pergunta>
+              {StringsComuns.components.questions.pergunta2.titulo}
+              <img src={arrow} alt="arrow" />
+            </Pergunta>
+            {StringsComuns.components.questions.pergunta2.resposta}
+          </Resposta>
+        </Lista>
+
+        <Lista>
+          <Resposta>
+            <Pergunta>
+              {StringsComuns.components.questions.pergunta3.titulo}
+              <img src={arrow} alt="arrow" />
+            </Pergunta>
+            {StringsComuns.components.questions.pergunta3.resposta}
+          </Resposta>
+        </Lista>
+
+        <Lista>
+          <Resposta>
+            <Pergunta>
+              {StringsComuns.components.questions.pergunta4.titulo}
+
+              <img src={arrow} alt="arrow" />
+            </Pergunta>
+            {StringsComuns.components.questions.pergunta4.resposta}
           </Resposta>
         </Lista>
       </PerguntasCard>

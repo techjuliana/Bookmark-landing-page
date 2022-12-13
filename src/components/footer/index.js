@@ -3,6 +3,7 @@ import logo from "./../../assets/images/logo-bookmark-dark.svg";
 import facebook from "./../../assets/images/icon-facebook.svg";
 import twitter from "./../../assets/images/icon-twitter.svg";
 import { Link } from "react-router-dom";
+import { StringsComuns } from "../../localization/texts";
 export default function Footer() {
   return (
     <Container>
@@ -12,15 +13,15 @@ export default function Footer() {
         </Link>
 
         <Link to="/features">
-          <Rota>FEATURES</Rota>
+          <Rota>{StringsComuns.components.rotas.features}</Rota>
         </Link>
 
         <Link to="/extension">
-          <Rota>PRICING</Rota>
+          <Rota>{StringsComuns.components.rotas.pricing}</Rota>
         </Link>
 
         <Link to="/contact">
-          <Rota>CONTACT</Rota>
+          <Rota>{StringsComuns.components.rotas.contact}</Rota>
         </Link>
       </Conjunto>
 
