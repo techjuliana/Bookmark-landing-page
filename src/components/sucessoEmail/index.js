@@ -2,18 +2,18 @@ import { Container, Sucesso, PerguntasCard } from "./styled";
 import arrow from "./../../assets/images/icon-arrow.svg";
 import { ParagrafoPrincipal } from "../features/styled";
 import { Link } from "react-router-dom";
-import { StringsComuns } from "../../i18n/localization/texts";
+import { i18n } from "./../../translate/i18n";
 export default function SucessoEmail() {
   return (
     <Container>
-      <h1> {StringsComuns.components.SucessoEmail.titulo}</h1>
+      <h1>{i18n.t("sucessoEmail.titulo")}</h1>
       <ParagrafoPrincipal>
-        {StringsComuns.components.SucessoEmail.paragrafo}
+        {i18n.t("sucessoEmail.paragrafo")}
       </ParagrafoPrincipal>
       <PerguntasCard>
         <img src={arrow} alt="bookmark" />
         <Link to="/">
-          <Sucesso> {StringsComuns.components.SucessoEmail.button}</Sucesso>
+          <Sucesso>{i18n.t("sucessoEmail.button")}</Sucesso>
         </Link>
       </PerguntasCard>
     </Container>

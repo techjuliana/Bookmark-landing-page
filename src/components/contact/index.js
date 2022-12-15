@@ -1,4 +1,4 @@
-import { StringsComuns } from "../../i18n/localization/texts";
+
 import {
   Container,
   Enviar,
@@ -7,24 +7,25 @@ import {
   TituloPrincipal,
   Titulo,
 } from "./styled";
-
+import { i18n } from "./../../translate/i18n";
 export default function Contact() {
   return (
     <Container>
       <TituloPrincipal>
-        {StringsComuns.components.contact.tituloPrincipal}
+      {i18n.t("contact.tituloPrincipal")}
+        
       </TituloPrincipal>
-      <Titulo>{StringsComuns.components.contact.titulo}</Titulo>
+      <Titulo>{i18n.t("contact.titulo")}</Titulo>
 
       <Formulario action="/sucessoEmail">
         <Email
           type="text"
           required
-          placeholder={StringsComuns.components.contact.textoBotao}
+          placeholder={i18n.t("contact.textoBotao")}
           id="email"
           className="input"
         />
-        <Enviar type="submit">{StringsComuns.components.contact.botao}</Enviar>
+        <Enviar type="submit">{i18n.t("contact.botao")}</Enviar>
       </Formulario>
     </Container>
   );

@@ -3,7 +3,7 @@ import logo from "./../../assets/images/logo-bookmark-dark.svg";
 import facebook from "./../../assets/images/icon-facebook.svg";
 import twitter from "./../../assets/images/icon-twitter.svg";
 import { Link } from "react-router-dom";
-import { StringsComuns } from "../../i18n/localization/texts";
+import { i18n } from "./../../translate/i18n";
 export default function Footer() {
   return (
     <Container>
@@ -13,15 +13,15 @@ export default function Footer() {
         </Link>
 
         <Link to="/features">
-          <Rota>{StringsComuns.components.rotas.features}</Rota>
+          <Rota>{i18n.t("rotas.features")}</Rota>
         </Link>
 
         <Link to="/extension">
-          <Rota>{StringsComuns.components.rotas.pricing}</Rota>
+          <Rota>{i18n.t("rotas.pricing")}</Rota>
         </Link>
 
         <Link to="/contact">
-          <Rota>{StringsComuns.components.rotas.contact}</Rota>
+          <Rota>{i18n.t("rotas.contact")}</Rota>
         </Link>
       </Conjunto>
 

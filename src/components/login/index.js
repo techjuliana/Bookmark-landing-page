@@ -10,7 +10,7 @@ import {
   Botao,
   Titulo,
 } from "./styled";
-import { StringsComuns } from "../../i18n/localization/texts";
+import { i18n } from "./../../translate/i18n";
 function Login() {
   const [opcao, setOpcao] = useState("");
 
@@ -20,65 +20,61 @@ function Login() {
         <img src={capa} alt="logo" />
         <Navegacao>
           <Botao onClick={() => setOpcao("criar")}>
-            {StringsComuns.components.login.navegacao.criar}
+            {i18n.t("login.navegacao.criar")}
           </Botao>
           <Botao onClick={() => setOpcao("login")}>
-            {StringsComuns.components.login.navegacao.login}
+            {i18n.t("login.navegacao.entrar")}
           </Botao>
         </Navegacao>
         <EstiloCaixa action="/sucessoEmail">
           {opcao === "criar" ? (
             <div className="criar-campo">
-              <Titulo>{StringsComuns.components.login.tituloCriar}</Titulo>
-              <input
-                placeholder={StringsComuns.components.login.inputs.nome}
-              ></input>
+              <Titulo>{i18n.t("login.tituloCriar")}</Titulo>
+              <input placeholder={i18n.t("login.inputs.nome")}></input>
               <IMaskInput
                 mask="000.000.000-00"
-                placeholder={StringsComuns.components.login.inputs.cpf}
+                placeholder={i18n.t("login.inputs.cpf")}
                 type="text"
                 required
               />
               <IMaskInput
                 mask="(00) 00000 - 0000"
-                placeholder={StringsComuns.components.login.inputs.telefone}
+                placeholder={i18n.t("login.inputs.telefone")}
                 type="text"
                 required
               />
               <input
                 type="text"
                 required
-                placeholder={StringsComuns.components.login.inputs.email}
+                placeholder={i18n.t("login.inputs.email")}
               ></input>
               <input
                 type="text"
                 required
-                placeholder={StringsComuns.components.login.inputs.senha}
+                placeholder={i18n.t("login.inputs.senha")}
               ></input>
               <input
                 type="text"
                 required
-                placeholder={
-                  StringsComuns.components.login.inputs.confirmarSenha
-                }
+                placeholder={i18n.t("login.inputs.confirmarSenha")}
               ></input>
             </div>
           ) : (
             <div>
-              <Titulo>{StringsComuns.components.login.tituloLogin}</Titulo>
+              <Titulo>{i18n.t("login.tituloLogin")}</Titulo>
               <input
                 type="text"
                 required
-                placeholder={StringsComuns.components.login.inputs.email}
+                placeholder={i18n.t("login.inputs.email")}
               ></input>
               <input
                 type="text"
                 required
-                placeholder={StringsComuns.components.login.inputs.senha}
+                placeholder={i18n.t("login.inputs.senha")}
               ></input>
             </div>
           )}
-          <Entrar type="submit">{StringsComuns.components.login.entrar}</Entrar>
+          <Entrar type="submit">{i18n.t("login.entrar")}</Entrar>
         </EstiloCaixa>
       </Campo>
     </Container>
