@@ -12,7 +12,7 @@ import {
 import chrome from "./../../assets/images/logo-chrome.svg";
 import firefox from "./../../assets/images/logo-firefox.svg";
 import opera from "./../../assets/images/logo-opera.svg";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 export default function extension() {
   return (
     <Container>
@@ -29,7 +29,7 @@ export default function extension() {
           </Paragrafo>
           <Linha />
           <Links href="/">
-            {StringsComuns.components.extension.chrome.button}
+            {StringsComuns.components.extension.button}
           </Links>
         </Card>
         <Card id="card2">
@@ -42,7 +42,7 @@ export default function extension() {
           </Paragrafo>
           <Linha />
           <Links href="/">
-            {StringsComuns.components.extension.firefox.button}
+            {StringsComuns.components.extension.button}
           </Links>
         </Card>
         <Card id="card3">
@@ -55,7 +55,7 @@ export default function extension() {
           </Paragrafo>
           <Linha />
           <Links href="/">
-            {StringsComuns.components.extension.opera.button}
+            {StringsComuns.components.extension.button}
           </Links>
         </Card>
       </Cards>

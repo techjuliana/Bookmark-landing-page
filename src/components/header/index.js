@@ -16,7 +16,7 @@ import twitter from "./../../assets/images/icon-twitter.svg";
 import logo from "./../../assets/images/logo-bookmark.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 export default function Header() {
   const [navToggle, setNavToggle] = useState(false);
   const alternar = () => {

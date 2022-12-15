@@ -14,7 +14,7 @@ import ilustracao1 from "./../../assets/images/illustration-features-tab-1.svg";
 import ilustracao2 from "./../../assets/images/illustration-features-tab-2.svg";
 import ilustracao3 from "./../../assets/images/illustration-features-tab-3.svg";
 import { useState } from "react";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 export default function Features() {
   const [opcao, setOpcao] = useState("");
 

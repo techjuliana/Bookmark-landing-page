@@ -10,7 +10,7 @@ import {
   Botao,
   Titulo,
 } from "./styled";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 function Login() {
   const [opcao, setOpcao] = useState("");
 

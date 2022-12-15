@@ -10,7 +10,7 @@ import {
   Textos,
 } from "./styled";
 import imagem from "./../../assets/images/illustration-hero.svg";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 export default function About() {
   return (
     <Container>

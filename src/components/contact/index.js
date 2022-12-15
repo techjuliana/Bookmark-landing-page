@@ -1,4 +1,4 @@
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 import {
   Container,
   Enviar,

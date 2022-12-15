@@ -3,7 +3,7 @@ import logo from "./../../assets/images/logo-bookmark-dark.svg";
 import facebook from "./../../assets/images/icon-facebook.svg";
 import twitter from "./../../assets/images/icon-twitter.svg";
 import { Link } from "react-router-dom";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 export default function Footer() {
   return (
     <Container>

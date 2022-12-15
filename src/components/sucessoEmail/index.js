@@ -2,7 +2,7 @@ import { Container, Sucesso, PerguntasCard } from "./styled";
 import arrow from "./../../assets/images/icon-arrow.svg";
 import { ParagrafoPrincipal } from "../features/styled";
 import { Link } from "react-router-dom";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 export default function SucessoEmail() {
   return (
     <Container>

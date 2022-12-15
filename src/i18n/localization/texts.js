@@ -16,22 +16,22 @@ export const StringsComuns = {
     },
     extension: {
       titulo: "Download the extension",
-      paragrafo:
-        "We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize",
+      paragrafo:"We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize",
+        button: "Add & Install Extension",
       chrome: {
         titulo: "Add to Chrome",
         paragrafo: "Minimum version 62",
-        button: "Add & Install Extension",
+       
       },
       firefox: {
         titulo: "Add to Firefox",
         paragrafo: "Minimum version 55",
-        button: "Add & Install Extension",
+        
       },
       opera: {
         titulo: "Add to Opera",
         paragrafo: "Minimum version 46",
-        button: "Add & Install Extension",
+        
       },
     },
     features: {
@@ -65,21 +65,21 @@ export const StringsComuns = {
     login:"LOGIN",
     },
     login: {
-      tituloLogin: "Entre em sua conta",
-      tituloCriar: "Crie sua conta e aproveite",
-      entrar:"Entrar",
+      tituloLogin: "Login to your account",
+      tituloCriar: "Create your account and enjoy",
+      entrar:"Login",
       titulo: "FEATURES",
       navegacao:{
-        criar:"Criar Conta",
+        criar:"Create an account",
         entrar:"Login",
       },
       inputs:{
-        nome:"Como quer ser chamado(a)?",
-        cpf:"Digite o seu CPF",
-        telefone:"Digite o Telefone",
-        email:"Digite seu e-mail",
-        senha:"Digite sua senha",
-        confirmarSenha:"Confirmar a Senha" ,
+        nome:"How do you want to be called?",
+        cpf:"Enter your CPF",
+        telefone:"Enter Phone",
+        email:"Enter your e-mail",
+        senha:"Type your password",
+        confirmarSenha:"Confirm the password" ,
       },
       },
       questions:{

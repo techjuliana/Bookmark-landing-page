@@ -5,7 +5,7 @@ import {
   ParagrafoPrincipal,
   TituloPrincipal,
 } from "../features/styled";
-import { StringsComuns } from "../../localization/texts";
+import { StringsComuns } from "../../i18n/localization/texts";
 export default function Questions() {
   return (
     <Container>
